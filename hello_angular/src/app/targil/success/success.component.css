@@ -1,0 +1,8 @@
+.success {
+  color: white;
+  background-color: green;
+  width: 70%;
+  margin: auto;
+  border: 3px solid red;
+  border-radius: 20px;
+}
