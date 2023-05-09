@@ -11,6 +11,6 @@ export class MainComponent {
   myPass = '';
 
   onPassUpdate(event: any) {
-    this.myType = event.target.value;
+    this.myPass = event.target.value;
   }
 }
