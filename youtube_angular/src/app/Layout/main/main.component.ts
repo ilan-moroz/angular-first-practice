@@ -12,5 +12,6 @@ export class MainComponent {
 
   onPassUpdate(event: any) {
     this.myPass = event.target.value;
+    console.log(this.myPass);
   }
 }
