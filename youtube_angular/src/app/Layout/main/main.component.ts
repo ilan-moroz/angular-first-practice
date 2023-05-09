@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent {
-  myType = 'test';
+  myType = 'text';
   myPlaceHolder = 'User Name';
+  myPass = '';
+
+  onPassUpdate(event: any) {
+    this.myType = event.target.value;
+  }
 }
