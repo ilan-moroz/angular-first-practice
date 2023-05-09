@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class MainComponent {
   myType = 'password';
-  myPlaceHolder = 'haha yoyo';
+  myPlaceHolder = 'Password';
 }
