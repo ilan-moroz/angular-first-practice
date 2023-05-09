@@ -9,6 +9,7 @@ export class MainComponent {
   myType = 'text';
   myPlaceHolder = 'User Name';
   myPass = '';
+  myAge = 0;
 
   onPassUpdate(event: any) {
     this.myPass = event.target.value;

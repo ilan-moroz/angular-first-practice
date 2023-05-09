@@ -18,4 +18,13 @@
   />
 </div>
 <br /><br />
-<div class="Box"></div>
+<div class="Box">
+  <input
+    type="number"
+    name="age"
+    id="age"
+    placeholder="Age"
+    [(ngModel)]="myAge"
+  />
+  <h2>You was born in {{ 2023 - myAge }}</h2>
+</div>
