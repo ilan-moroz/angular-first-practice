@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent {
-  myType = 'passwordd';
+  myType = 'password';
   myPlaceHolder = 'haha yoyo';
 }
