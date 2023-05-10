@@ -12,7 +12,7 @@
 }
 
 .yellow_box {
-  background-color: greenyellow;
-  border: 3px solid yellow;
+  background-color: yellow;
+  border: 3px solid greenyellow;
   padding: 1em;
 }

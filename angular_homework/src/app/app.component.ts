@@ -13,9 +13,10 @@ export class AppComponent {
   myAge = 0;
   myColor = '';
   txtColor = 'Blue';
-
   title2 = 'ng if directive';
   showInfo = true;
+  directive = ['red_box', 'green_box', 'yellow_box'];
+  currentClassIndex = 0;
 
   showNameAndType() {
     return `My name is ${this.myName} and my type is ${this.myType}`;
@@ -33,5 +34,15 @@ export class AppComponent {
     let rt = '';
     this.showInfo ? (rt = 'blue') : (rt = 'red');
     return rt;
+  }
+
+  getClass() {
+    const className = this.directive[this.currentClassIndex];
+    return { [className]: true };
+  }
+
+  onClick() {
+    this.currentClassIndex =
+      (this.currentClassIndex + 1) % this.directive.length;
   }
 }
