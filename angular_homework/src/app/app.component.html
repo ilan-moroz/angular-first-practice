@@ -3,6 +3,7 @@
   <h2>Your Name Is {{ myName }} ?</h2>
   <p>TEST: {{ this.showNameAndType() }}</p>
   <label>Enter Password : </label>
+  <!-- event -->
   <input
     [type]="type"
     placeholder="Enter Password"
@@ -14,6 +15,7 @@
   <label>Enter your age:</label>
   <input type="number" name="age" id="id_age" [(ngModel)]="myAge" />
   <h3 appGreen>Your age is {{ myAge }}</h3>
+  <!-- ngModel -->
   <label for="colors">Choose a color : </label>
   <select name="colors" id="colors" [(ngModel)]="myColor">
     <option value="red">red</option>
