@@ -31,4 +31,10 @@
   <h2 *ngIf="showInfo; else hideInfo">show info is work</h2>
   <ng-template #hideInfo>not work</ng-template><br />
   <button class="btn btn-info" (click)="onBtnClick()">hide/show</button>
+  <!-- ngStyle -->
+  <h1 [ngStyle]="{ color: getShowInfoColor() }">Welcome to {{ title }}!</h1>
+  <!-- ngColor -->
+  <h3 [ngClass]="{ red_box: true }">ng class test</h3>
+  <h3 [ngClass]="{ green_box: showInfo }">ng class test</h3>
+  <h3 [ngClass]="{ green_box: showInfo, red_box: !showInfo }">ng class test</h3>
 </div>

@@ -12,6 +12,7 @@ export class AppComponent {
   type = 'password';
   myAge = 0;
   myColor = '';
+  txtColor = 'Blue';
 
   title2 = 'ng if directive';
   showInfo = true;
@@ -26,5 +27,11 @@ export class AppComponent {
 
   onBtnClick() {
     this.showInfo = !this.showInfo;
+  }
+
+  getShowInfoColor() {
+    let rt = '';
+    this.showInfo ? (rt = 'blue') : (rt = 'red');
+    return rt;
   }
 }
