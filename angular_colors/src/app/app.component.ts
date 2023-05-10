@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'angular_colors';
   myName = 'Shnitzel';
   myType = 'Gaver';
+  type = 'password';
 
   showNameAndType() {
     return `My name is ${this.myName} and my type is ${this.myType}`;
