@@ -1,6 +1,6 @@
 <div style="text-align: center">
   <h1>Welcome To {{ title }}</h1>
-  <h3>Your Name Is {{ myName }} ?</h3>
+  <h2>Your Name Is {{ myName }} ?</h2>
   <p>TEST: {{ this.showNameAndType() }}</p>
   <label>Enter Password : </label>
   <input
@@ -9,5 +9,18 @@
     name="password"
     id="password"
     (input)="onPassUpdate($event)"
-  />
+  /><br />
+  <br />
+  <label>Enter your age:</label>
+  <input type="number" name="age" id="id_age" [(ngModel)]="myAge" />
+  <h3>Your age is {{ myAge }}</h3>
+  <label for="colors">Choose a color : </label>
+  <select name="colors" id="colors" [(ngModel)]="myColor">
+    <option value="red">red</option>
+    <option value="blue">blue</option>
+    <option value="purple">purple</option>
+    <option value="pink">pink</option>
+    <option value="green">green</option>
+  </select>
+  <h1 style="color: {{ myColor }}">{{ myColor }}</h1>
 </div>

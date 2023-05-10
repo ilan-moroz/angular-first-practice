@@ -10,6 +10,8 @@ export class AppComponent {
   myName = 'Shnitzel';
   myType = 'Gaver';
   type = 'password';
+  myAge = 0;
+  myColor = '';
 
   showNameAndType() {
     return `My name is ${this.myName} and my type is ${this.myType}`;
