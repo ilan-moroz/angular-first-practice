@@ -13,11 +13,18 @@ export class AppComponent {
   myAge = 0;
   myColor = '';
 
+  title2 = 'ng if directive';
+  showInfo = true;
+
   showNameAndType() {
     return `My name is ${this.myName} and my type is ${this.myType}`;
   }
 
   onPassUpdate(event: any) {
     this.myName = event.target.value;
+  }
+
+  onBtnClick() {
+    this.showInfo = !this.showInfo;
   }
 }

@@ -23,4 +23,10 @@
     <option value="green">green</option>
   </select>
   <h1 style="color: {{ myColor }}">Your color is : {{ myColor }}</h1>
+  <!-- IF -->
+  <h2 *ngIf="showInfo">Welcome To {{ title2 }}</h2>
+  <!--If ELSE -->
+  <h2 *ngIf="showInfo; else hideInfo">show info is work</h2>
+  <ng-template #hideInfo>not work</ng-template><br />
+  <button class="btn btn-info" (click)="onBtnClick()">hide/show</button>
 </div>
