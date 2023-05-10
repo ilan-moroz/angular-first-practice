@@ -38,4 +38,10 @@
   <h3 [ngClass]="{ green_box: showInfo }">ng class test 2</h3>
   <button class="btn btn-info" (click)="onClick()">Next</button>
   <h3 [ngClass]="getClass()">ng class test 3</h3>
+  <!-- ngFor -->
+  <ul>
+    <li *ngFor="let item of fruits_ar" style="text-align: left">
+      {{ item }}
+    </li>
+  </ul>
 </div>
