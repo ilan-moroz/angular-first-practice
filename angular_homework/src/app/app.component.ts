@@ -17,6 +17,7 @@ export class AppComponent {
   showInfo = true;
   directive = ['red_box', 'green_box', 'yellow_box'];
   currentClassIndex = 0;
+  fruits_ar = ['apple', 'banana', 'kiwi', 'orange'];
 
   showNameAndType() {
     return `My name is ${this.myName} and my type is ${this.myType}`;
