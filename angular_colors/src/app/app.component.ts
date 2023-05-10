@@ -14,4 +14,8 @@ export class AppComponent {
   showNameAndType() {
     return `My name is ${this.myName} and my type is ${this.myType}`;
   }
+
+  onPassUpdate(event: any) {
+    this.myName = event.target.value;
+  }
 }
