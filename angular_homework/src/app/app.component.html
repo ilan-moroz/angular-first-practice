@@ -67,6 +67,8 @@
   </ul>
   <!-- BINDING CUSTOM PROP -->
   <h2>Welcome to {{ title3 }}!</h2>
-  <app-user-input (addProdEvent)="addProductFromApp($event)"></app-user-input>
+  <app-user-input (addProdEvent)="addProductFromApp($event)"
+    >add fruit</app-user-input
+  >
   <app-list [infoList]="listFruits_ar"></app-list>
 </div>
