@@ -52,4 +52,17 @@
     {{ item }}
   </span>
   <!-- ngSwitch -->
+  <br />
+  <br />
+  <ul>
+    <li *ngFor="let item of fruits_ar; let i = index" [ngSwitch]="item">
+      <span *ngSwitchCase="'apple'" [ngStyle]="{ color: 'red' }">
+        {{ i }} - {{ item }}
+      </span>
+      <span *ngSwitchCase="'kiwi'" [ngStyle]="{ color: 'blue' }">
+        {{ i }} - {{ item }}
+      </span>
+      <span *ngSwitchDefault> {{ i }} - {{ item }} </span>
+    </li>
+  </ul>
 </div>
