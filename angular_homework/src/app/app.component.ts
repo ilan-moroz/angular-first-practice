@@ -28,6 +28,9 @@ export class AppComponent {
     'strawberry',
     'watermelon',
   ];
+  title3 = 'Alias events and props output and input';
+  listFruits_ar = ['apple', 'mango'];
+  fruit_input = '';
 
   showNameAndType() {
     return `My name is ${this.myName} and my type is ${this.myType}`;
@@ -55,5 +58,9 @@ export class AppComponent {
   onClick() {
     this.currentClassIndex =
       (this.currentClassIndex + 1) % this.directive.length;
+  }
+
+  addProduct() {
+    this.listFruits_ar.push(this.fruit_input);
   }
 }
