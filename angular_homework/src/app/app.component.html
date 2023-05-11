@@ -25,7 +25,7 @@
     <option value="green">green</option>
   </select>
   <h1 style="color: {{ myColor }}">Your color is : {{ myColor }}</h1>
-  <!-- IF -->
+  <!-- ngIf -->
   <h2 *ngIf="showInfo">Welcome To {{ title2 }}</h2>
   <!--If ELSE -->
   <h2 *ngIf="showInfo; else hideInfo">show info is work</h2>
@@ -44,4 +44,12 @@
       {{ item }}
     </li>
   </ul>
+  <!-- ngFor and ngClass with if -->
+  <span
+    *ngFor="let item of fruits_ar2; let i = index"
+    [ngClass]="{ yellow_box: i % 2 !== 0 }"
+  >
+    {{ item }}
+  </span>
+  <!-- ngSwitch -->
 </div>
