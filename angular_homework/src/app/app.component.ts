@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnChanges {
   title = 'angular_colors';
   myName = 'Shnitzel';
   myType = 'Gaver';
@@ -31,6 +31,23 @@ export class AppComponent {
   title3 = 'Alias events and props output and input';
   listFruits_ar = ['apple', 'mango'];
   // fruit_input = '';
+  title4 = 'Hooks life cycle';
+  fruits_ar3 = ['banana', 'melon', 'orange'];
+  fruit1 = 'apple';
+  fruit2 = 'banana';
+  constructor() {}
+  ngOnInit() {
+    console.log('on init');
+  }
+
+  changeSomething() {
+    this.fruit2 = 'grapes';
+    this.title4 = 'change';
+  }
+
+  ngOnChanges() {
+    console.log('ngOnChanges');
+  }
 
   showNameAndType() {
     return `My name is ${this.myName} and my type is ${this.myType}`;

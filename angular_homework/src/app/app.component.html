@@ -71,4 +71,9 @@
     >add fruit</app-user-input
   >
   <app-list [infoList]="listFruits_ar"></app-list>
+  <!-- OnInit OnChanges -->
+  <h1>Welcome {{ title4 }}</h1>
+  <app-input fruitName="{{ fruit1 }}"></app-input>
+  <app-input fruitName="{{ fruit2 }}"></app-input>
+  <button (click)="changeSomething()">Change First</button>
 </div>
