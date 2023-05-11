@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./list.component.css'],
 })
 export class ListComponent implements OnInit {
-  @Input() listFruits_ar: any;
+  @Input('infoList') listFruits_ar: any;
   constructor() {}
 
   ngOnInit() {}
