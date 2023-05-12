@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FruitsService } from '../../services/fruits.service';
+import { sortBy } from 'lodash';
 
 @Component({
   selector: 'app-items-list',
@@ -7,15 +8,12 @@ import { FruitsService } from '../../services/fruits.service';
   styleUrls: ['./items-list.component.css'],
 })
 export class ItemsListComponent implements OnInit {
-  // listFruits_ar = ['apple', 'kiwi'];
-  // constructor(private _fruitSer: FruitsService) {
-  //   this.listFruits_ar = this._fruitSer.getFruits();
-  // }
+  listFruits_ar = ['apple', 'kiwi'];
   drinks_ar: any = [];
-  listFruits_ar: string[];
   constructor(private _fruitSer: FruitsService) {
     this.listFruits_ar = this._fruitSer.getFruits();
     this.drinks_ar = this._fruitSer.drinks_ar;
+    this.drinks_ar = sortBy(this._fruitSer.drinks_ar, 'price');
   }
   ngOnInit() {}
 }
