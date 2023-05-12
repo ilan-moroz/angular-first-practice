@@ -4,6 +4,7 @@ import {
   ElementRef,
   HostListener,
   HostBinding,
+  Input,
 } from '@angular/core';
 
 // hostListener
@@ -33,11 +34,14 @@ import {
   selector: '[appBetterGreen]',
 })
 export class BetterGreenDirective implements OnInit {
+  @Input() bgColor = 'greenyellow';
   @HostBinding('style.color') clr = 'white';
   @HostBinding('style.background') bg = 'greenyellow';
   constructor(private elementRef: ElementRef) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.bg = this.bgColor;
+  }
 
   @HostListener('mouseenter') mouseover() {
     this.clr = 'brown';
