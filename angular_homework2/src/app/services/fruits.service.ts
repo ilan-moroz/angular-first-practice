@@ -5,8 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class FruitsService {
   fruits_ar: string[] = [];
+  drinks_ar;
   constructor() {
     this.fruits_ar = ['melon', 'mango', 'orange'];
+    this.drinks_ar = [
+      { name: 'beer', price: 3, alcohol: 0.05, expired: '2021-05-10' },
+      { name: 'cola', price: 2.5, alcohol: 0, expired: '2020-05-10' },
+    ];
   }
 
   getFruits() {
