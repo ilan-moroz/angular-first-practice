@@ -19,12 +19,34 @@
       Please enter valid email !
     </div>
     <br /><br />
-    <label for="exampleInputEmail1">Choose your cake</label>
+    <label for="select_cake">Choose your cake</label>
     <select id="select" name="select_cake" [(ngModel)]="cake">
       <option value="orange">Orange cake</option>
       <option value="Vanilla">vanilla cake</option>
     </select>
-
+    <br /><br />
+    <label for="inputPass">Password</label>
+    <input
+      type="text"
+      id="inputPass"
+      name="inputPass"
+      ngModel
+      required
+      [(ngModel)]="inputPass"
+    />
+    <br /><br />
+    <label for="inputPass2">Repeat Password</label>
+    <input
+      type="text"
+      id="inputPass2"
+      name="inputPass2"
+      ngModel
+      required
+      [(ngModel)]="inputPass2"
+    />
+    <div *ngIf="inputPass !== inputPass2" style="color: red">
+      Passwords do not match!
+    </div>
     <br /><br />
     <button [disabled]="!f.valid" #btn2>Submit</button>
   </form>

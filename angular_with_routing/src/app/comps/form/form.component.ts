@@ -8,6 +8,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 export class FormComponent implements OnInit {
   @ViewChild('f') myForm: any;
   cake = 'vanilla';
+  inputPass: any;
+  inputPass2: any;
   ngOnInit() {}
 
   onSub() {
