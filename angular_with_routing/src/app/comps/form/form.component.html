@@ -19,6 +19,13 @@
       Please enter valid email !
     </div>
     <br /><br />
+    <label for="exampleInputEmail1">Choose your cake</label>
+    <select id="select" name="select_cake" [(ngModel)]="cake">
+      <option value="orange">Orange cake</option>
+      <option value="Vanilla">vanilla cake</option>
+    </select>
+
+    <br /><br />
     <button [disabled]="!f.valid" #btn2>Submit</button>
   </form>
   <!-- template reference variable -->
