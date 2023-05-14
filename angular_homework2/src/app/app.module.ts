@@ -6,6 +6,7 @@ import { BetterGreenDirective } from './dir/better-green.directive';
 import { InputUserComponent } from './comps/input-user/input-user.component';
 import { ItemsListComponent } from './comps/items-list/items-list.component';
 import { CryptoListComponent } from './comps/crypto-list/crypto-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { CryptoListComponent } from './comps/crypto-list/crypto-list.component';
     ItemsListComponent,
     CryptoListComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
