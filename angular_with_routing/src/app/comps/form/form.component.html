@@ -3,7 +3,18 @@
   <form (ngSubmit)="onSub()" #f="ngForm">
     <br /><br />
     <label for="exampleInputEmail1">Full name:</label>
-    <input type="text" id="full_name" name="full_name" ngModel required />
+    <input
+      type="text"
+      id="full_name"
+      name="full_name"
+      ngModel
+      required
+      [pattern]="nameOnly"
+      #full_nameInp="ngModel"
+    />
+    <div *ngIf="!full_nameInp.valid && full_nameInp.touched" style="color: red">
+      only english letters!
+    </div>
     <br /><br />
     <label for="exampleInputEmail1">Email address</label>
     <input

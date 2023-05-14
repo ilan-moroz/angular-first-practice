@@ -10,6 +10,8 @@ export class FormComponent implements OnInit {
   cake = 'vanilla';
   inputPass: any;
   inputPass2: any;
+  nameOnly: any = /^[a-zA-Z!@#%&*]{3,9999}$/;
+
   ngOnInit() {}
 
   onSub() {
