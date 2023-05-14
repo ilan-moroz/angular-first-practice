@@ -1,7 +1,13 @@
 <div style="text-align: center">
   <h1>Welcome to Service app of Shnitzel!</h1>
   <!-- routerLink -->
-  <a routerLink="/">Crypto</a> |
-  <a routerLink="/list">Items</a>
+  <a
+    routerLink="/"
+    [routerLinkActive]="['active']"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Crypto</a
+  >
+  |
+  <a routerLink="/list" [routerLinkActive]="['active']">Items</a>
   <router-outlet></router-outlet>
 </div>
