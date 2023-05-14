@@ -4,12 +4,14 @@ import { CryptoListComponent } from './comps/crypto-list/crypto-list.component';
 import { ItemsListComponent } from './comps/items-list/items-list.component';
 import { FoodsComponent } from './comps/foods/foods.component';
 import { PageError404Component } from './comps/page-error404/page-error404.component';
+import { FormComponent } from './comps/form/form.component';
 
 const routes: Routes = [
   { path: '', component: CryptoListComponent },
   { path: 'list', component: ItemsListComponent },
   { path: 'foods', component: FoodsComponent },
   { path: 'foods/:id', component: FoodsComponent },
+  { path: 'form', component: FormComponent },
   { path: '**', component: PageError404Component },
 ];
 

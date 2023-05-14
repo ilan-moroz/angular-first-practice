@@ -1,0 +1,26 @@
+<!-- form with validation -->
+<div>
+  <form (ngSubmit)="onSub()" #f="ngForm">
+    <br /><br />
+    <label for="exampleInputEmail1">Full name:</label>
+    <input type="text" id="full_name" name="full_name" ngModel required />
+    <br /><br />
+    <label for="exampleInputEmail1">Email address</label>
+    <input
+      type="email"
+      id="exampleInputEmail1"
+      name="email"
+      ngModel
+      required
+      email
+      #emailInp="ngModel"
+    />
+    <div *ngIf="!emailInp.valid && emailInp.touched" style="color: red">
+      Please enter valid email !
+    </div>
+    <br /><br />
+    <button [disabled]="!f.valid" #btn2>Submit</button>
+  </form>
+  <!-- template reference variable -->
+  <p #myPara>para test</p>
+</div>

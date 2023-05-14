@@ -8,9 +8,10 @@ import { CryptoListComponent } from './comps/crypto-list/crypto-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FoodsComponent } from './comps/foods/foods.component';
 import { PageError404Component } from './comps/page-error404/page-error404.component';
+import { FormComponent } from './comps/form/form.component';
 
 @NgModule({
-  declarations: [AppComponent, ItemsListComponent, CryptoListComponent, FoodsComponent, PageError404Component],
+  declarations: [AppComponent, ItemsListComponent, CryptoListComponent, FoodsComponent, PageError404Component, FormComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
