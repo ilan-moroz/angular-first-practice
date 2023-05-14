@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-form',
@@ -11,12 +12,13 @@ export class FormComponent implements OnInit {
   inputPass: any;
   inputPass2: any;
   nameOnly: any = /^[a-zA-Z!@#%&*]{3,9999}$/;
-
+  constructor(private route: ActivatedRoute, private router: Router) {}
   ngOnInit() {}
 
   onSub() {
     // console.log(this.para);
     // console.log(this.para.nativeElement.innerHTML);
     console.log(this.myForm);
+    this.router.navigate(['/']);
   }
 }
