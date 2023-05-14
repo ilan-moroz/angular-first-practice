@@ -1,0 +1,7 @@
+<div style="display: flex; flex-wrap: nowrap; text-align: center">
+  <div *ngFor="let item of coins_ar" style="margin-right: 50px">
+    <img src="{{ item.image }}" style="width: 80px" />
+    <h2>{{ item.name }}</h2>
+    <div>Value: {{ item.current_price | currency }}</div>
+  </div>
+</div>
