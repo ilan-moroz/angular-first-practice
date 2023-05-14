@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CryptoService {
-  data = '';
+  data: any;
   getTestData() {
     this.data = new Observable((obs) => {
       setTimeout(() => {
