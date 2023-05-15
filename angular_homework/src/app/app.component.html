@@ -5,6 +5,7 @@
   <label>Enter Password : </label>
   <!-- event -->
   <input
+    appYellow
     [type]="type"
     placeholder="Enter Password"
     name="password"
@@ -13,8 +14,8 @@
   /><br />
   <br />
   <label>Enter your age:</label>
-  <input type="number" name="age" id="id_age" [(ngModel)]="myAge" />
-  <h3 appGreen>Your age is {{ myAge }}</h3>
+  <input type="number" name="age" id="id_age" [(ngModel)]="myAge" appYellow />
+  <h3 appGreen appRed>Your age is {{ myAge }}</h3>
   <!-- ngModel -->
   <label for="colors">Choose a color : </label>
   <select name="colors" id="colors" [(ngModel)]="myColor">
