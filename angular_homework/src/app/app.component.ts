@@ -62,9 +62,7 @@ export class AppComponent implements OnInit, OnChanges {
   }
 
   getShowInfoColor() {
-    let rt = '';
-    this.showInfo ? (rt = 'blue') : (rt = 'red');
-    return rt;
+    return this.showInfo ? 'blue' : 'red';
   }
 
   getClass() {
