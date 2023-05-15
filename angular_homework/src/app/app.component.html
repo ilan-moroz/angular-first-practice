@@ -62,12 +62,12 @@
       style="list-style-type: none"
     >
       <span *ngSwitchCase="'apple'" [ngStyle]="{ color: 'red' }">
-        {{ i }} - {{ item }}
+        {{ i + 1 }} - {{ item }}
       </span>
       <span *ngSwitchCase="'kiwi'" [ngStyle]="{ color: 'blue' }">
-        {{ i }} - {{ item }}
+        {{ i + 1 }} - {{ item }}
       </span>
-      <span *ngSwitchDefault> {{ i }} - {{ item }} </span>
+      <span *ngSwitchDefault> {{ i + 1 }} - {{ item }} </span>
     </li>
   </ul>
   <!-- BINDING CUSTOM PROP -->
