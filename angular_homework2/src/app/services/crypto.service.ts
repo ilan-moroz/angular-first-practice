@@ -23,8 +23,8 @@ export class CryptoService {
     });
     return this.data;
   }
+  constructor(private http: HttpClient) {}
   makeApiRequest() {
     return this.http.get(this.bitUrl);
   }
-  constructor(private http: HttpClient) {}
 }
