@@ -7,6 +7,7 @@ import { InputUserComponent } from './comps/input-user/input-user.component';
 import { ItemsListComponent } from './comps/items-list/items-list.component';
 import { CryptoListComponent } from './comps/crypto-list/crypto-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormComponent } from './comps/form/form.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     InputUserComponent,
     ItemsListComponent,
     CryptoListComponent,
+    FormComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
