@@ -7,6 +7,6 @@
     <h3>{{ item.name | uppercase }}</h3>
     <div>Price: {{ item.price | number : "1.2" | currency : "USD" }}</div>
     <div>Alcohol: {{ item.alcohol | percent }}</div>
-    <div>Expired: {{ item.expired | date }}</div>
+    <div>Expired: {{ item.expired | date : "dd/MM/yyyy" }}</div>
   </div>
 </div>
