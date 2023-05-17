@@ -16,7 +16,7 @@ export class CryptoListComponent implements OnInit {
     });
     this._cryptoServ.makeApiRequest().subscribe((data) => {
       console.log(data);
-      this.coins_ar.push(...Object.values(data));
+      this.coins_ar = data;
       console.log(this.coins_ar);
     });
   }
